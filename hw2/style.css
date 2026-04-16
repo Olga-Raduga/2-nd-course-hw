@@ -1,0 +1,270 @@
+css
+/* Базовые стили и переменные */
+:root {
+    --color-background-dark: #181818; /* Фон всего сайта */
+    --color-background-light: #282828; /* Фон секций */
+    --color-primary-green: #A1FF00; /* Яркий зеленый */
+    --color-accent-yellow: #FFD700; /* Акцентный желтый */
+    --color-text-primary: #FFFFFF; /* Основной текст */
+    --color-text-secondary: #CCCCCC; /* Второстепенный текст */
+    --color-card-bg-1: #4a247f; /* Цвет для карточки 1 */
+    --color-card-bg-2: #008080; /* Цвет для карточки 2 */
+    --color-card-bg-3: #800080; /* Цвет для карточки 3 */
+    --color-card-bg-4: #006400; /* Цвет для карточки 4 */
+    --color-card-bg-5: #800020; /* Цвет для карточки 5 */
+    --color-card-bg-6: #000080; /* Цвет для карточки 6 */
+
+    --font-family-primary: 'Montserrat', sans-serif; 
+    --font-family-secondary: 'Roboto', sans-serif; 
+    --spacing-unit: 16px;
+}
+/* Сброс базовых стилей */
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--color-background-dark);
+    color: var(--color-text-primary);
+    line-height: 1.6;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+/*========================================*/
+/* Блок "Добро пожаловать" */
+/*========================================*/
+.welcome-section {
+    background-color: #E1FF8F;
+    padding: 80px 0; 
+    text-align: left;
+    margin: 0;
+    height: 815px;
+    position: relative; 
+    overflow: hidden; 
+}
+.star {
+    position: absolute;
+}
+.star-1 { top: 20px; right: 2px; }
+.star-2 { top: 115px; left: 4px; }
+.star-3 { top: 88px; left: 96px; }
+.star-4 { top: 587px; right: 345px; }
+.star-5 { top: 558px; right: 458px; }
+
+
+/* Декоративные элементы */
+.welcome-section::before,
+.welcome-section::after {
+    content: '';
+    position: absolute;
+    background-color: var(--color-primary-green);
+    opacity: 0.2;
+    filter: blur(100px); 
+    z-index: 0;
+}
+.welcome-section::before {
+    width: 200px;
+    height: 200px;
+    top: 20px;
+    left: 50px;
+    transform: rotate(-45deg);
+}
+.welcome-section::after {
+    width: 180px;
+    height: 180px;
+    bottom: 30px;
+    right: 70px;
+    transform: rotate(45deg);
+}
+.welcome-section__container {
+    max-width: 1200px; 
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0 20px; 
+    position: relative; 
+    z-index: 1;
+}
+.welcome-section__content {
+    max-width: 800px; 
+    margin: 0;
+    padding: 0 20px;
+    padding-left: 42px;
+    padding-top: 96px;
+    position: relative; 
+    z-index: 1;
+}
+.welcome-section__title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 64px; 
+    font-weight: 700;
+    width: 769px;
+    line-height: 1.2;
+    color: #202027;
+    margin-bottom: var(--spacing-unit);
+    text-shadow: 0 0 10px rgba(161, 255, 0, 0.3); 
+}
+.welcome-section__text {
+    font-size: 24px; 
+    line-height: 32px;
+    margin-bottom: 48px;        
+}
+.welcome-section__buttons {
+    display: flex;   
+    gap: 20px; 
+}
+.welcome-section__button {
+    display: inline-block;
+    padding: 13px 64px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 30px; 
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: 1px solid transparent;    
+}
+.welcome-section__button_primary {   
+    color: #202027;
+    border-color: #202027;   
+}
+.welcome-section__button_primary:hover {
+    background-color: #202027;
+    color: #FFFFFF;
+    border-color: #202027;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(161, 255, 0, 0.4);
+}
+.welcome-section__button_secondary {
+    background-color: transparent;
+    color: #FFFFFF;
+    border-color: #202027;   
+}
+.welcome-section__button_secondary:hover {
+    background-color: var(--color-primary-green);
+    color: #202027;
+    border-color: #202027;
+    transform: translateY(-3px);
+}
+.games-marquee {
+    background-color: #BCEC30;
+    color: #000;
+    padding: 25px 0;
+    margin-top: 150px;
+    font-size: 30px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-around;
+    overflow: hidden;
+    text-transform: uppercase;
+}
+/*========================================*/
+/* Блок "Об играх" */
+/*========================================*/
+.about-games-section {
+    background-color: #202027;
+    padding: 30px 0;
+}
+.about-games-section__container {
+    max-width: 1200px;
+    margin: 0;
+    padding-left: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;  
+}
+.about-games-section__title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 64px; 
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #FFFFFF;
+    position: relative;
+    display: inline-block; 
+    padding-bottom: 15px;
+}
+.about-games-section__title::after {
+    content: '';
+    position: absolute;
+    bottom: 0; 
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px; 
+    height: 3px; 
+    background-color: var(--color-primary-green);
+    border-radius: 2px;
+}
+.about-games-section__text {
+    color: #FFFFFF;
+    font-size: 24px;
+}
+.games-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 30px; 
+}
+.game-card {
+    background-color: #FFFFFF; 
+    border-radius: 12px;
+    overflow: hidden; 
+    text-decoration: none;
+    color: var(--color-text-primary);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    min-height: 466px;
+    flex-direction: column; 
+}
+.game-card:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3); 
+}
+.game-card__image-wrapper {
+    background-color: var(--color-card-bg-1); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; 
+    height: 250px; 
+    overflow: hidden; 
+}
+.game-card__image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    border-radius: 8px 8px 0 0; 
+}
+.game-card__content {
+    padding: 20px;
+    text-align: center;
+    flex-grow: 1; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.game-card__title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-align: left;
+    line-height: 1.2;
+    display: block;
+    color: var(--color-text-primary);
+}
+.game-card__number {
+    font-size: 14px;
+    padding-right: 220px;
+    margin-bottom: 5px;
+    display: block;
+}
+.game-card__description {
+    font-size: 16px;
+    color: var(--color-text-secondary);
+    margin-bottom: 0;
+}
+

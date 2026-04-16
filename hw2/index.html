@@ -5,84 +5,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Сайт мини-игры</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
     <header class="welcome-section">
+        <!--звезды-->
+        <img src="img/Star-1.png" class="star star-1" alt="star">
+        <img src="img/Star-2.png" class="star star-2" alt="star">
+        <img src="img/Star-3.png" class="star star-3" alt="star">
+        <img src="img/Star-4.png" class="star star-4" alt="star">
+        <img src="img/Star-5.png" class="star star-5" alt="star">
         <div class="welcome-section__container">
             <div class="welcome-section__content">
-                <h1 class="welcome-section__title">Добро пожаловать на мой сайт мини-игр</h1>
-                <p class="welcome-section__text">Тебе предстоит пройти несколько увлекательных игр. Если готов, нажимай
-                    «Поехали!» и приступай.</p>
+                <h1 class="welcome-section__title">Добро пожаловать<br> на мой сайт мини-игр</h1>
+                <p class="welcome-section__text">Тебе предстоит пройти несколько увлекательных игр.<br> Если готов, нажимай<strong> «Поехали!»</strong> и <strong> приступай</strong>.</p>
                 <div class="welcome-section__buttons">
-                    <a href="#games" class="welcome-section__button welcome-section__button_primary">Поехали</a>
-
+                    <a href="#about" class="welcome-section__button welcome-section__button_primary">Поехали!</a>
                 </div>
-
             </div>
-
         </div>
-
-    </header>
-    <!--Блок "Об играх"-->
+        <div class="games-marquee">
+            <span>ВИКТОРИНА</span> ✦ <span>УГАДАЙ ЧИСЛО</span> ✦ <span>ПЕРЕВЕРНИ ТЕКСТ</span>
+        </div>
+    </header> 
+    <!-- "Об играх"-->
     <main class="about-games-section" id="about">
         <div class="about-games-section__container">
             <h2 class="about-games-section__title">Об играх</h2>
+            <p class="about-games-section__text">В моей коллекции представлено 6 игр на разные темы.<br> Игры не сложные - в них может поиграть каждый.<br> Все игры доступны для пользования.</p>
             <div class="games-grid">
                 <a href="#game-link-1" class="game-card">
                     <div class="game-card__image-wrapper">
                         <img src="img/guess.png" alt="Угадай число" class="game-card__image">
-
                     </div>
                     <div class="game-card__content">
+                        <span class="game-card__number">Игра № 1</span>
                         <h3 class="game-card__title">Угадай число</h3>
-
-
                     </div>
                 </a>
                 <a href="#game-link-2" class="game-card">
                     <div class="game-card__image-wrapper">
                         <img src="img/guess.png" alt="Простая арифметика" class="game-card__image">
-
                     </div>
                     <div class="game-card__content">
+                        <span class="game-card__number">Игра № 2</span>
                         <h3 class="game-card__title">Простая арифметика</h3>
-
-
                     </div>
                 </a>
                 <a href="#game-link-3" class="game-card">
                     <div class="game-card__image-wrapper">
                         <img src="img/guess.png" alt="Переверни текст" class="game-card__image">
-
                     </div>
                     <div class="game-card__content">
+                        <span class="game-card__number">Игра № 3</span>
                         <h3 class="game-card__title">Переверни текст</h3>
-
-
                     </div>
                 </a>
                 <a href="#game-link-4" class="game-card">
                     <div class="game-card__image-wrapper">
                         <img src="img/guess.png" alt="Камень, ножницы, бумага" class="game-card__image">
-
                     </div>
                     <div class="game-card__content">
+                        <span class="game-card__number">Игра № 4</span>
                         <h3 class="game-card__title">Камень, ножницы, бумага</h3>
-
-
                     </div>
                 </a>
                 <a href="#game-link-5" class="game-card">
                     <div class="game-card__image-wrapper">
                         <img src="img/guess.png" alt="Простая викторина" class="game-card__image">
-
                     </div>
                     <div class="game-card__content">
+                        <span class="game-card__number">Игра № 5</span>
                         <h3 class="game-card__title">Простая викторина</h3>
-
-
                     </div>
                 </a>
                 <a href="#game-link-6" class="game-card">
@@ -91,18 +91,14 @@
 
                     </div>
                     <div class="game-card__content">
+                        <span class="game-card__number">Игра № 6</span>
                         <h3 class="game-card__title">Генератор случайных цветов</h3>
 
 
                     </div>
                 </a>
-
             </div>
-
         </div>
-
     </main>
-
 </body>
-
 </html>
