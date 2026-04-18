@@ -127,12 +127,13 @@ body {
     border: 1px solid transparent;    
 }
 .welcome-section__button_primary {   
-    color: #202027;
-    border-color: #202027;   
+    color: #FFFFFF;
+    border-color: #202027; 
+    background-color: #202027;  
 }
 .welcome-section__button_primary:hover {
-    background-color: #202027;
-    color: #FFFFFF;
+    background-color: #FFFFFF;
+    color: #202027;
     border-color: #202027;
     transform: translateY(-3px);
     box-shadow: 0 5px 15px rgba(161, 255, 0, 0.4);
