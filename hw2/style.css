@@ -1,29 +1,10 @@
-css
-/* Базовые стили и переменные */
-:root {
-    --color-background-dark: #181818; /* Фон всего сайта */
-    --color-background-light: #282828; /* Фон секций */
-    --color-primary-green: #A1FF00; /* Яркий зеленый */
-    --color-accent-yellow: #FFD700; /* Акцентный желтый */
-    --color-text-primary: #FFFFFF; /* Основной текст */
-    --color-text-secondary: #CCCCCC; /* Второстепенный текст */
-    --color-card-bg-1: #4a247f; /* Цвет для карточки 1 */
-    --color-card-bg-2: #008080; /* Цвет для карточки 2 */
-    --color-card-bg-3: #800080; /* Цвет для карточки 3 */
-    --color-card-bg-4: #006400; /* Цвет для карточки 4 */
-    --color-card-bg-5: #800020; /* Цвет для карточки 5 */
-    --color-card-bg-6: #000080; /* Цвет для карточки 6 */
-
-    --font-family-primary: 'Montserrat', sans-serif; 
-    --font-family-secondary: 'Roboto', sans-serif; 
-    --spacing-unit: 16px;
-}
-/* Сброс базовых стилей */
-body {
+*{
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
     font-family: 'Montserrat', sans-serif;
-    background-color: var(--color-background-dark);
-    color: var(--color-text-primary);
     line-height: 1.6;
 }
 
@@ -32,15 +13,13 @@ body {
 *::after {
     box-sizing: border-box;
 }
-/*========================================*/
-/* Блок "Добро пожаловать" */
-/*========================================*/
+
 .welcome-section {
     background-color: #E1FF8F;
-    padding: 80px 0; 
+    padding: 106px 0; 
     text-align: left;
     margin: 0;
-    height: 815px;
+    height: 800px;
     position: relative; 
     overflow: hidden; 
 }
@@ -111,7 +90,8 @@ body {
 .welcome-section__text {
     font-size: 24px; 
     line-height: 32px;
-    margin-bottom: 48px;        
+    margin-bottom: 48px; 
+    margin-top: 26px;       
 }
 .welcome-section__buttons {
     display: flex;   
@@ -210,9 +190,14 @@ body {
 .games-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
-    gap: 40px; 
-    padding-top: 40px;
+    gap: 32px; 
+    align-items: start;
+    margin-top: 72px;
+    padding-bottom: 14px;
+    
+   
 }
+
 .game-card {
     background-color: #FFFFFF; 
     border-radius: 12px;
@@ -221,9 +206,18 @@ body {
     color: var(--color-text-primary);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
-    min-height: 466px;
+    
     flex-direction: column; 
+    flex-grow: 1;
+   
 }
+.game-card:nth-child(4) {
+    transform: translateY(-40px);
+}
+.game-card:nth-child(6) {
+    transform: translateY(-40px);
+}
+
 .game-card:hover {
     transform: translateY(-10px); 
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3); 
@@ -233,7 +227,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    position: relative;
     overflow: hidden; 
 }
 .game-card__image {
@@ -245,7 +239,7 @@ body {
 }
 .game-card__content {
     padding: 20px;
-    text-align: center;
+    text-align: left;
     flex-grow: 1; 
     display: flex;
     flex-direction: column;
@@ -256,22 +250,20 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-size: 32px;
     font-weight: 700;
-    margin-top: 0;
-    margin-bottom: 10px;
+    margin: 22px 10px;
     text-align: left;
     line-height: 1.2;
     display: block;
-    color: var(--color-text-primary);
+    
 }
 .game-card__number {
     font-size: 16px;
-    padding-right: 206px;
-    margin-bottom: 5px;
+    margin: 12px 28px 0;
+    
     display: block;
 }
 .game-card__description {
     font-size: 16px;
-    color: var(--color-text-secondary);
     margin-bottom: 0;
 }
 
