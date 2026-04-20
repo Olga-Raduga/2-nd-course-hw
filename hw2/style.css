@@ -7,7 +7,10 @@ body {
     font-family: 'Montserrat', sans-serif;
     line-height: 1.6;
 }
-
+.center {
+    padding-left: calc(50% - 600px) ;
+    padding-right: calc(50% - 600px);
+}
 *,
 *::before,
 *::after {
@@ -26,7 +29,7 @@ body {
 .star {
     position: absolute;
 }
-.star-1 { top: 20px; right: 2px; }
+.star-1 { top: 0; right: 0; }
 .star-2 { top: 115px; left: 4px; }
 .star-3 { top: 88px; left: 96px; }
 .star-4 { top: 587px; right: 345px; }
@@ -60,8 +63,7 @@ body {
 .welcome-section__container,
 .about-games-section__container {
     max-width: 1200px; 
-    margin-left: calc((100% - 1200px) / 2);
-    margin-right: calc((100% - 1200px) / 2);
+    
     
 }
 .welcome-section__container { 
