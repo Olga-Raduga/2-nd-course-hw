@@ -25,7 +25,7 @@ body {
   background-color: #E1FF8F;
   padding: 106px 0;
   text-align: left;
-  margin: 0;
+  margin: 0 auto;
   height: 800px;
   position: relative;
   overflow: hidden;
@@ -174,11 +174,27 @@ body {
   justify-content: space-around;
   overflow: hidden;
   text-transform: uppercase;
+  white-space: nowrap;
 }
 
-/*========================================*/
+.games-marquee__track {
+  display: inline-block;
+  animation: marquee 20s linear infinite;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+.games-marquee:hover .games-marquee__track {
+  animation-play-state: paused;
+}
+
 /* Блок "Об играх" */
-/*========================================*/
 .about-games-section {
   background-color: #202027;
   padding-top: 94px;
@@ -277,7 +293,6 @@ body {
 }
 
 .game-card__content {
-  padding: 20px;
   text-align: left;
   flex-grow: 1;
   display: flex;
@@ -360,6 +375,48 @@ body {
     height: 238px;
   }
   .welcome-section .star-2 {
-    display: none;
+    width: 35px;
+    height: 35px;
+    left: 38px;
+  }
+  .welcome-section .star-3 {
+    width: 21px;
+    height: 21px;
+  }
+  .welcome-section .star-4 {
+    width: 39px;
+    height: 41px;
+    right: 34px;
+  }
+  .welcome-section .star-5 {
+    width: 18px;
+    height: 18px;
+    right: 86px;
+  }
+  .welcome-section__content {
+    max-width: 100%;
+  }
+  .welcome-section__title {
+    font-size: 40px;
+    max-width: 100%;
+  }
+  .welcome-section__text {
+    font-size: 16px;
+    width: auto;
+  }
+  .welcome-section__buttons {
+    gap: 15px;
+    margin: 0 auto;
+    max-width: 285px;
+  }
+  .welcome-section__button {
+    width: 100%;
+    font-size: 16px;
+    text-align: center;
+    padding: 13px 20px;
+  }
+  .games-marquee {
+    font-size: 16px;
+    white-space: nowrap;
   }
 }/*# sourceMappingURL=style.css.map */
