@@ -46,6 +46,13 @@ alert(num);
 //Возраст через prompt
 let age = prompt('Сколько вам лет?');
 alert(age);
+//задание 9
+//объект user
+let user = {
+    name: 'Ольга',
+    age: 25,
+    isAdmin: false
+};
 
 
 
