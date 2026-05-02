@@ -53,6 +53,12 @@ let user = {
     age: 25,
     isAdmin: false
 };
+//задание 10
+//Имя через prompt, вывод шаблонной строкой
+let userName = prompt('Как вас зовут?');
+alert(`Привет, ${userName}!`);
+
+
 
 
 
