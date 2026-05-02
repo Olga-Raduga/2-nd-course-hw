@@ -13,3 +13,12 @@ alert(Yearipone);
 //Имя создателя JavaScript
 let JScreator = 'Brendan Eich';
 alert(JScreator);
+//задание 4
+//Две переменные: сумма, разность, произведение и частное
+let x = 10;
+let b = 2;
+alert(x + b);
+alert(x - b);
+alert(x * b);
+alert(x / b);
+ 
