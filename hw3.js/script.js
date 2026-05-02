@@ -9,3 +9,7 @@ alert(a);
 // год выпуска iPhone
 let Yearipone = 2007;
 alert(Yearipone);
+//задание 3
+//Имя создателя JavaScript
+let JScreator = 'Brendan Eich';
+alert(JScreator);
