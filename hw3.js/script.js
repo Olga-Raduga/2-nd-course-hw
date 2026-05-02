@@ -42,5 +42,10 @@ num /= 3;
 num++;
 num--;
 alert(num);
+//задание 8
+//Возраст через prompt
+let age = prompt('Сколько вам лет?');
+alert(age);
+
 
 
