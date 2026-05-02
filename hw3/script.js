@@ -1,2 +1,2 @@
-confirm('Согласен создать');
-prompt('Сколько вам лет?');
+let productPrice = prompt('цена товара');
+alert(productPrice);
