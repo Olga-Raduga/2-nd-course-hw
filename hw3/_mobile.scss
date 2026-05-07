@@ -48,10 +48,11 @@
 }
 .welcome-section__text {
     font-size: 16px;
-    line-height: 1.2; 
+    line-height: 1.3; 
     max-width: 310px; 
     margin-left: auto;
     margin-right: auto;;
+    margin-bottom: 34px;
 }
 .welcome-section__buttons {
     flex-direction: column;
@@ -60,16 +61,17 @@
     max-width: 280px;
 }
 .welcome-section__button {
-    width: 100%;
+    
     font-size: 16px;
     text-align: center;
-    padding: 16px 20px;
+    padding: 16px 40px;
+    font-weight: 600;
 }
 .games-marquee {
     font-size: 16px;
     gap: 16px;
     margin-top: 60px;
-    padding: 15px 0;
+    padding: 12px 0;
 }
 .about-games-section {
         display: none;
@@ -105,24 +107,25 @@
     .mini-card__image-wrapper {
         flex: 0 0 auto;
         width: 100%;
-        height: 284px;
+        height: 285px;
     }
     .mini-card__content {
         flex: 0 0 auto;
         width: 100%;
-        padding: 20px;
+        padding: 30px;
     }
     .mini-card__title {
         font-size: 32px;
-        margin-bottom: 8px;
+        margin-bottom: 18px;
         line-height: 1.2;
     }
     .mini-card__text {
         font-size: 16px;      
         line-height: 1.2;
+        margin-bottom: 32px;
     }
     .mini-card__button {
         font-size: 16px;      
-        width: 100%;
+       padding: 14px 110px;
     }
 }

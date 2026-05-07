@@ -129,14 +129,17 @@ html, body {
     transform: translateY(-3px);
 }
 .games-marquee {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
     background-color: #BCEC30;
     color: #000;
     padding: 25px 0;
-    margin-top: 150px;
+    
     font-size: 30px;
     font-weight: bold;
-    display: flex;
-    justify-content: space-around;
+    
     overflow: hidden;
     text-transform: uppercase;
     white-space: nowrap;
