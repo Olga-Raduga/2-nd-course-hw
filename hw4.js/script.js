@@ -86,3 +86,16 @@ if (clientOS === 1) {
 else {
     console.log('Установите версию приложения для Android по ссылке')
 }
+//дополнительное задание 3
+//программа, которая выдает соответствующее сообщение клиенту при наличии двух условий: операционной системы телефона (iOS или Android) и года производства.
+let clientOS = 0;
+let clientDeviceYear = 2015;
+if (clientOS === 0 && clientDeviceYear < 2015) {
+    console.log("Установите облегченную версию приложения для iOS по ссылке");
+} else if (clientOS === 0 && clientDeviceYear >= 2015) {
+    console.log("Установите версию приложения для iOS по ссылке");
+} else if (clientOS === 1 && clientDeviceYear < 2015) {
+    console.log("Установите облегченную версию приложения для Android по ссылке");
+} else {
+    console.log("Установите версию приложения для Android по ссылке");
+}
