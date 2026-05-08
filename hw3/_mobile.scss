@@ -1,0 +1,131 @@
+@media (max-width: 767px) {
+    .center {
+    padding-left: 17px;
+    padding-right: 16px;
+}
+.welcome-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 0;
+    max-height: 700px;   
+    text-align: center;
+    .star-1 {
+    width: 128px;
+    height: auto;
+    }
+.star-2 {
+    width: 35px;
+    height: 35px;
+    left: 38px;
+}
+.star-3 {
+    width: 21px;
+    height: 21px;
+}
+.star-4 {
+    width: 39px;
+    height: 41px;
+    right: 34px;
+}
+.star-5 {
+    width: 18px;
+    height: 18px;
+    right: 86px;
+}
+}
+.welcome-section__content {
+    max-width: 100%;
+    padding-top: 38px;
+}
+.welcome-section__text br {
+  display: none; 
+}
+.welcome-section__title {
+    font-size: 40px;
+    line-height: 1.2;
+    max-width: 100%;
+}
+.welcome-section__text {
+    font-size: 16px;
+    line-height: 1.3; 
+    max-width: 310px; 
+    margin-left: auto;
+    margin-right: auto;;
+    margin-bottom: 34px;
+}
+.welcome-section__buttons {
+    flex-direction: column;
+    gap: 15px;
+    margin: 0 auto;
+    max-width: 280px;
+}
+.welcome-section__button {
+    
+    font-size: 16px;
+    text-align: center;
+    padding: 16px 40px;
+    font-weight: 600;
+}
+.games-marquee {
+    font-size: 16px;
+    gap: 16px;
+    margin-top: 60px;
+    padding: 12px 0;
+}
+.about-games-section {
+        display: none;
+    }
+    /* Мобильная версия для "Мини игры" Section */
+    .mini-section {
+        padding-top: 45px;
+        padding-bottom: 15px;
+    }
+    .section__title {
+        font-size: 36px;
+        margin-bottom: 44px;
+    }
+    .mini-list {
+        gap: 24px;
+    }
+     .mini-card {
+        flex-direction: column;    
+        min-height: auto;
+        border-radius: 30px;
+        overflow: hidden;
+         
+        box-sizing: border-box; 
+    }
+    .mini-card:nth-child(even) {
+        flex-direction: column;
+    }
+    .mini-card:nth-child(1) { min-height: 528px; }
+    .mini-card:nth-child(2), .mini-card:nth-child(3), 
+    .mini-card:nth-child(5) { min-height: 567px; }
+    .mini-card:nth-child(4) { min-height: 606px; }
+    .mini-card:nth-child(6) { min-height: 626px; }
+    .mini-card__image-wrapper {
+        flex: 0 0 auto;
+        width: 100%;
+        height: 285px;
+    }
+    .mini-card__content {
+        flex: 0 0 auto;
+        width: 100%;
+        padding: 30px;
+    }
+    .mini-card__title {
+        font-size: 32px;
+        margin-bottom: 18px;
+        line-height: 1.2;
+    }
+    .mini-card__text {
+        font-size: 16px;      
+        line-height: 1.2;
+        margin-bottom: 32px;
+    }
+    .mini-card__button {
+        font-size: 16px;      
+       padding: 14px 110px;
+    }
+}
