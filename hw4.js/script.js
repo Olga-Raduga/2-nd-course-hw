@@ -28,3 +28,8 @@ if (d > 100 || e > 100) {
 else {
     console.log('Неверно');
 }
+//задание 4
+//Исправление кода
+let a = '2';
+let b = '3';
+alert(Number(a) + Number(b));
