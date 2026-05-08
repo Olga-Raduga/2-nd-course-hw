@@ -33,3 +33,33 @@ else {
 let a = '2';
 let b = '3';
 alert(Number(a) + Number(b));
+//задание 5
+//Используем оператор switch
+let monthNumber = Number(prompt('Введите номер месяца (от 1 до 12)'));
+if (monthNumber <= 0 || monthNumber > 12) {
+    alert('Такого месяца не существует');
+}
+else {
+    switch (monthNumber) {
+        case 12:
+        case 1:
+        case 2:
+            alert('зима');
+            break;
+        case 3:
+        case 4:
+        case 5:
+            alert('весна');
+            break;
+        case 6:
+        case 7:
+        case 8:
+            alert('лето');
+            break;
+        case 9:
+        case 10:
+        case 11:
+            alert('осень');
+            break;
+    }
+}
