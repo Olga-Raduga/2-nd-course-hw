@@ -87,3 +87,17 @@ for (const property in book) {
         console.log(`${propertyDescription}: ${value}`);
     }
 }
+//дополнительное задание 4
+//Массив из 10 случайных чисел, найти минимум
+const numbers = [];
+for (let i = 0; i < 10; i++) {
+    numbers.push(Math.floor(Math.random() * 100) + 1);
+}
+console.log("Сгенерированный массив случайных чисел:" + numbers);
+let min = numbers[0];
+for (let i = 1; i < numbers.length; i++) {
+    if (numbers[i] < min) {
+        min = numbers[i];
+    }
+}
+console.log("Минимальное число: " + min);
