@@ -1,13 +1,13 @@
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1025px) {
     .welcome-section {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding-bottom: 0;
-    max-height: 700px;   
+    max-height: 650px;   
     
-    .star-1 {
-    width: 228px;
+.star-1 {
+    width: 278px;
     height: auto;
     }
 .star-2 {
@@ -31,16 +31,16 @@
 }
 
 }
-.star-6, .star-7 {
+.star-6, .star-7, .star-8, .star-9{
     display: none;
 }
-    .welcome-section__title {
+.welcome-section__title {
         font-size: 40px;
     }
-    .welcome-section__text {
+.welcome-section__text {
         font-size: 16px;
     }
-    .welcome-section__buttons {
+.welcome-section__buttons {
     flex-direction: column;
     gap: 15px;
     
@@ -97,9 +97,14 @@
     }
     .mini-card__title {
         font-size: 26px;
+        line-height: 1.2;
     }
     .mini-card__text {
         font-size: 15px;
+    }
+    .mini-card__button {
+        font-size: 16px;      
+       padding: 14px 110px;
     }
     .footer {
         height: 100px;
