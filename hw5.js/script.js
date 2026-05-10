@@ -46,3 +46,13 @@ const firstFriday = 2;
 for (let day = firstFriday; day <= 31; day += 7) {
     console.log("Сегодня пятница, " + day + "-е число. Необходимо подготовить отчет.");
 }
+//дополнительное задание 1
+//Вычитать 7 из 100 пока не станет меньше 0
+let k = 100;
+let num = 0;
+while (k >= 0) {
+    k = k - 7;
+    num++;
+}
+console.log("Результат: " + k);
+console.log("Количество итераций: " + num);
