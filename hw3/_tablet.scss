@@ -1,10 +1,64 @@
 @media (min-width: 768px) and (max-width: 1024px) {
+    .welcome-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 0;
+    max-height: 700px;   
+    
+    .star-1 {
+    width: 228px;
+    height: auto;
+    }
+.star-2 {
+    width: 35px;
+    height: 35px;
+    left: 38px;
+}
+.star-3 {
+    width: 21px;
+    height: 21px;
+}
+.star-4 {
+    width: 39px;
+    height: 41px;
+    right: 34px;
+}
+.star-5 {
+    width: 18px;
+    height: 18px;
+    right: 86px;
+}
+
+}
+.star-6, .star-7 {
+    display: none;
+}
     .welcome-section__title {
         font-size: 40px;
     }
     .welcome-section__text {
         font-size: 16px;
     }
+    .welcome-section__buttons {
+    flex-direction: column;
+    gap: 15px;
+    
+    max-width: 280px;
+}
+.welcome-section__button {
+    
+    font-size: 16px;
+    text-align: center;
+    padding: 16px 40px;
+    font-weight: 600;
+}
+.games-marquee {
+    font-size: 16px;
+    gap: 16px;
+    margin-top: 60px;
+    padding: 16px 0;
+}
     .games-grid {
         grid-template-columns: repeat(3, 1fr);
         gap: 16px;
@@ -46,6 +100,12 @@
     }
     .mini-card__text {
         font-size: 15px;
+    }
+    .footer {
+        height: 100px;
+    }
+    .footer__text {
+        font-size: 16px;
     }
 
 }
