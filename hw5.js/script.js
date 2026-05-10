@@ -30,3 +30,13 @@ const obj = {
 for (let name in obj) {
     console.log(name + " — зарплата " + obj[name] + " долларов");
 }
+//задание 5
+//Делим 1000 на 2 пока не станет меньше 50
+let n = 1000;
+let num = 0;
+while (n >= 50) {
+    n = n / 2;
+    num++;
+}
+console.log("Результат: " + n);
+console.log("Количество итераций: " + num);
