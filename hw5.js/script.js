@@ -13,3 +13,10 @@ while (i <=5) {
     console.log(i);
     i++;
 }
+//задание 3
+//Числа от 7 до 22
+let i = 7;
+while (i <= 22) {
+    console.log(i);
+    i++;
+}
