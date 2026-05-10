@@ -67,3 +67,23 @@ for (let i = 0; i < months.length; i++) {
     const monthNumber = i + 1;
     console.log(`${months[i]} - ${monthNumber}-й месяц`);
 }
+//дополнительное задание 3
+//Объект «Книга»
+const book = {
+    title: "Мастер и Маргарита",
+    author: "Михаил Булгаков",
+    year: 1967,
+    genre: "Роман"
+};
+console.log("Информация о книге:");
+for (const property in book) {
+    if (Object.hasOwnProperty.call(book, property)) {
+        const value = book[property];
+        let propertyDescription = property;
+        if (property === 'title') propertyDescription = 'Название';
+        if (property === 'author') propertyDescription = 'Автор';
+        if (property === 'year') propertyDescription = 'Год издания';
+        if (property === 'genre') propertyDescription = 'Жанр';
+        console.log(`${propertyDescription}: ${value}`);
+    }
+}
