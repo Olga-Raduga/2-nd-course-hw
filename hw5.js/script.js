@@ -40,3 +40,9 @@ while (n >= 50) {
 }
 console.log("Результат: " + n);
 console.log("Количество итераций: " + num);
+//задание 6
+//Пятницы месяца
+const firstFriday = 2;
+for (let day = firstFriday; day <= 31; day += 7) {
+    console.log("Сегодня пятница, " + day + "-е число. Необходимо подготовить отчет.");
+}
