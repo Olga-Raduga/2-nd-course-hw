@@ -63,3 +63,18 @@ function multiply(a, b) {
 console.log(multiply(3, 4));
 console.log(multiply("abc", 4));
 console.log(multiply("2", "5")); 
+
+//задание 6
+//функция-с проверкой
+function getCube() {
+    let input = prompt("Введите число:");
+    let n = Number(input);
+    if (isNaN(n)) {
+        return "Переданный параметр не является числом";
+    }
+    return n + " в кубе равняется " + (n * n * n);
+}
+for (let i = 0; i <= 10; i++) {
+    console.log(i + " в кубе равняется " + (i * i * i));
+}
+
