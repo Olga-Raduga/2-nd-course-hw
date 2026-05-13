@@ -1,3 +1,10 @@
+:root {
+    --color-primary-green: #BCEC30;
+    --spacing-unit: 24px;
+    --color-text-primary: #202027;
+    --color-card-bg-1: #F7F7F7;
+    --font-family-primary: 'Montserrat', sans-serif; 
+}
 *{
     margin: 0;
     padding: 0;
@@ -197,7 +204,6 @@ html, body {
     transform: translateX(-50%);
     width: 80px; 
     height: 3px; 
-    background-color: var(--color-primary-green);
     border-radius: 2px;
 }
 .about-games-section__text {

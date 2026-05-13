@@ -1,4 +1,12 @@
 @charset "UTF-8";
+:root {
+  --color-primary-green: #BCEC30;
+  --spacing-unit: 24px;
+  --color-text-primary: #202027;
+  --color-card-bg-1: #F7F7F7;
+  --font-family-primary: 'Montserrat', sans-serif;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -258,7 +266,6 @@ html, body {
   transform: translateX(-50%);
   width: 80px;
   height: 3px;
-  background-color: var(--color-primary-green);
   border-radius: 2px;
 }
 
@@ -486,16 +493,16 @@ html, body {
   margin: 0;
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1025px) {
   .welcome-section {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding-bottom: 0;
-    max-height: 700px;
+    max-height: 650px;
   }
   .welcome-section .star-1 {
-    width: 228px;
+    width: 278px;
     height: auto;
   }
   .welcome-section .star-2 {
@@ -517,7 +524,7 @@ html, body {
     height: 18px;
     right: 86px;
   }
-  .star-6, .star-7 {
+  .star-6, .star-7, .star-8, .star-9 {
     display: none;
   }
   .welcome-section__title {
@@ -580,9 +587,14 @@ html, body {
   }
   .mini-card__title {
     font-size: 26px;
+    line-height: 1.2;
   }
   .mini-card__text {
     font-size: 15px;
+  }
+  .mini-card__button {
+    font-size: 16px;
+    padding: 14px 110px;
   }
   .footer {
     height: 100px;
