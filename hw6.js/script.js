@@ -51,3 +51,15 @@ if (age < 0) {
 }
 }
 checkAge();
+
+//задание 5
+//функция-проверяет, являются ли переданные параметры корректными числами.
+function multiply(a, b) {
+    if (isNaN(Number(a)) || isNaN(Number(b))) {
+        return "Одно или оба значения не являются числом";
+    }
+    return Number(a) * Number(b);
+}
+console.log(multiply(3, 4));
+console.log(multiply("abc", 4));
+console.log(multiply("2", "5")); 
