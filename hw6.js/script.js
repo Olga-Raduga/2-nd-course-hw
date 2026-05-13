@@ -25,3 +25,15 @@ console.log(checkEven(4));
 console.log(checkEven(7));
 console.log(checkEven(0));
 
+//задание 2
+//функция-квадрат числа
+function printSquare(num) {
+    console.log(num * num);
+}
+function getSquare(num) {
+    return num * num;
+}
+printSquare(5);
+let result = getSquare(5);
+console.log(result);
+console.log(result + 10);
