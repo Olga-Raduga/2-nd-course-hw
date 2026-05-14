@@ -22,3 +22,7 @@ if (index !== -1) {
 } else {
     console.log(`Значение ${valueToFind} не найдено в массиве.`);
 }
+//задание 3
+//метода join
+const arr4 = [1, 3, 5, 10, 20];
+console.log(arr4.join(' '));
