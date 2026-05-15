@@ -43,5 +43,10 @@ const arr5 = [1, 1, 1];
 arr5.push(2, 2, 2);
 console.log(arr5);
 
-
+//задание 6
+//удаляем букву 'a'из массива
+let arr6 = [9, 8, 7, 'a', 6, 5];
+arr6 = arr6.filter(item => item !== 'a');
+arr6.sort((a, b) => a - b);
+console.log(arr6);
 
