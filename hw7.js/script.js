@@ -50,3 +50,9 @@ arr6 = arr6.filter(item => item !== 'a');
 arr6.sort((a, b) => a - b);
 console.log(arr6);
 
+//задание 7
+//Угадай число
+const arr7 = [9, 8, 7, 6, 5];
+const userInput7 = prompt('Угадай число:');
+arr7.includes(parseInt(userInput7)) ? alert('Угадал') : alert('Не угадал');
+
