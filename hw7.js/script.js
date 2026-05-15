@@ -65,3 +65,22 @@ console.log(str8.split('').reverse().join(''));
 //одномерный массив 
 const arr9 = [[1, 2, 3], [4, 5, 6]];
 console.log([...arr9[0], ...arr9[1]]);
+
+//задание 10
+//массив с произвольными числами
+const numbers = [];
+const arraySize = 10;
+const maxRandomValue = 10;
+for (let i = 0; i < arraySize; i++) {
+    const randomNumber = Math.floor(Math.random() * maxRandomValue) + 1;
+    numbers.push(randomNumber);
+}
+console.log("Исходный массив:");
+console.log(numbers);
+console.log("---");
+for (let i = 0; i < numbers.length - 1; i++) {
+    const currentElement = numbers[i];
+    const nextElement = numbers[i + 1];
+    const sum = currentElement + nextElement;
+    console.log(`Элемент ${currentElement} (индекс ${i}) + Элемент ${nextElement} (индекс ${i + 1}) = ${sum}`);
+}
