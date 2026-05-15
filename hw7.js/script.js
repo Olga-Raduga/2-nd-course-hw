@@ -84,3 +84,19 @@ for (let i = 0; i < numbers.length - 1; i++) {
     const sum = currentElement + nextElement;
     console.log(`Элемент ${currentElement} (индекс ${i}) + Элемент ${nextElement} (индекс ${i + 1}) = ${sum}`);
 }
+
+//задание 11
+//Функция возвращает новый массив
+function getSquaresOfNumbers(numbersArray) {
+const squaredNumbers = numbersArray.map(num => num * num);
+    return squaredNumbers;
+}
+const originalNumbers = [1, 2, 3, 4, 5];
+const squaredArray = getSquaresOfNumbers(originalNumbers);
+console.log("Исходный массив чисел:", originalNumbers);
+console.log("Массив квадратов чисел:", squaredArray);
+
+const anotherArray = [-2, 0, 5, 10];
+const squaredAnotherArray = getSquaresOfNumbers(anotherArray);
+console.log("\nИсходный массив чисел:", anotherArray);
+console.log("Массив квадратов чисел:", squaredAnotherArray);
