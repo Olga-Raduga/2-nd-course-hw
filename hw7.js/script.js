@@ -132,3 +132,16 @@ const anotherNumbers13 = [10, 20, 30, 40];
 const negativeAnotherArray = getNegativeNumbers(anotherNumbers13);
 console.log("\nИсходный массив чисел:", anotherNumbers13);
 console.log("Массив отрицательных чисел:", negativeAnotherArray); 
+
+//задание 14
+//Массив случайных чисел и четные значения
+const initialArray14 = [];
+const arraySize14 = 10;
+const maxRandomValue14 = 10; 
+for (let i = 0; i < arraySize14; i++) {
+    const randomNumber = Math.floor(Math.random() * (maxRandomValue14 + 1));
+    initialArray14.push(randomNumber);
+}
+console.log("Исходный массив (Задание 14):", initialArray14);
+const evenNumbersArray = initialArray14.filter(num => num % 2 === 0);
+console.log("Массив с четными значениями:", evenNumbersArray);
