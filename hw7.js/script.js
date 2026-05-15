@@ -61,3 +61,7 @@ arr7.includes(parseInt(userInput7)) ? alert('Угадал') : alert('Не уга
 const str8 = 'abcdef';
 console.log(str8.split('').reverse().join(''));
 
+//задание 9
+//одномерный массив 
+const arr9 = [[1, 2, 3], [4, 5, 6]];
+console.log([...arr9[0], ...arr9[1]]);
