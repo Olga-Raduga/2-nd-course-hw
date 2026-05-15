@@ -26,3 +26,16 @@ if (index !== -1) {
 //метода join
 const arr4 = [1, 3, 5, 10, 20];
 console.log(arr4.join(' '));
+
+//задание 4
+//многомерный массив
+const matrix = [];
+for (let i = 0; i < 3; i++) {
+    const row = [];
+    for (let j = 0; j < 3; j++) { row.push(1); }
+    matrix.push(row);
+}
+console.log(matrix);
+
+
+
