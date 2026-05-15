@@ -145,3 +145,23 @@ for (let i = 0; i < arraySize14; i++) {
 console.log("Исходный массив (Задание 14):", initialArray14);
 const evenNumbersArray = initialArray14.filter(num => num % 2 === 0);
 console.log("Массив с четными значениями:", evenNumbersArray);
+
+//задание 15
+//Среднее арифметическое массива
+const randomNumbers15 = [];
+const arraySize15 = 6;
+const maxRandomValue15 = 10;
+for (let i = 0; i < arraySize15; i++) {
+    const randomNumber = Math.floor(Math.random() * maxRandomValue15) + 1;
+    randomNumbers15.push(randomNumber);
+}
+console.log("Исходный массив (Задание 15):", randomNumbers15);
+const sumOfNumbers = randomNumbers15.reduce((accumulator, currentValue) => {
+    return accumulator + currentValue;
+}, 0); 
+let average = 0;
+if (randomNumbers15.length > 0) {
+    average = sumOfNumbers / randomNumbers15.length;
+}
+console.log("Сумма всех элементов:", sumOfNumbers);
+console.log("Среднее арифметическое:", average);
