@@ -116,3 +116,19 @@ const otherStrings = ["один", "два", "три", "четыре", "пять"
 const lengthsOfOtherStrings = getStringLengths(otherStrings);
 console.log("\nИсходный массив строк:", otherStrings);
 console.log("Массив длин строк:", lengthsOfOtherStrings);
+
+//задание 13
+//Массив отрицательных чисел
+function getNegativeNumbers(numbersArray) {
+    const negativeNumbers = numbersArray.filter(num => num < 0);
+    return negativeNumbers;
+}
+const originalNumbers13 = [1, -5, 4, -10, 0, 3, -2, -8];
+const negativeArray = getNegativeNumbers(originalNumbers13);
+console.log("Исходный массив (Задание 13):", originalNumbers13);
+console.log("Массив отрицательных чисел:", negativeArray);
+
+const anotherNumbers13 = [10, 20, 30, 40];
+const negativeAnotherArray = getNegativeNumbers(anotherNumbers13);
+console.log("\nИсходный массив чисел:", anotherNumbers13);
+console.log("Массив отрицательных чисел:", negativeAnotherArray); 
