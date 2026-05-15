@@ -100,3 +100,19 @@ const anotherArray = [-2, 0, 5, 10];
 const squaredAnotherArray = getSquaresOfNumbers(anotherArray);
 console.log("\nИсходный массив чисел:", anotherArray);
 console.log("Массив квадратов чисел:", squaredAnotherArray);
+
+//задание 12
+//Функция-принимает массив строк, возвращает массив длины слов
+function getStringLengths(stringArray) {
+    const lengthsArray = stringArray.map(str => str.length);
+    return lengthsArray;
+}
+const originalStrings = ["Привет", "мир", "JavaScript", "map", "функция"];
+const lengthsOfStrings = getStringLengths(originalStrings);
+console.log("Исходный массив строк:", originalStrings);
+console.log("Массив длин строк:", lengthsOfStrings);
+
+const otherStrings = ["один", "два", "три", "четыре", "пять"];
+const lengthsOfOtherStrings = getStringLengths(otherStrings);
+console.log("\nИсходный массив строк:", otherStrings);
+console.log("Массив длин строк:", lengthsOfOtherStrings);
