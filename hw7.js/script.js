@@ -56,3 +56,8 @@ const arr7 = [9, 8, 7, 6, 5];
 const userInput7 = prompt('Угадай число:');
 arr7.includes(parseInt(userInput7)) ? alert('Угадал') : alert('Не угадал');
 
+//задание 8
+//'fedcba'
+const str8 = 'abcdef';
+console.log(str8.split('').reverse().join(''));
+
