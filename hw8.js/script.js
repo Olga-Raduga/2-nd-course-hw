@@ -56,3 +56,12 @@ console.log(`Минимальное значение: ${minValue}`);
 
 const maxValue = Math.max(...numbersForMinMax); 
 console.log(`Максимальное значение: ${maxValue}`);
+//задание 5
+//Случайное число от 1 до 10
+function logRandomNumber() {
+    const randomNumber = Math.floor(Math.random() * 10) + 1;
+    console.log("\nЗадание 5:");
+    console.log(`Случайное число от 1 до 10: ${randomNumber}`);
+}
+logRandomNumber();
+logRandomNumber();
