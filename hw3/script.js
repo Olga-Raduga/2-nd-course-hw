@@ -56,4 +56,16 @@ function arithmeticGame() {
         alert(`Ошибка! Ваш ответ: ${userAnswer}. Правильный ответ: ${correctAnswer}`);
     }
 }
+//Игра 3
+function reverseTextGame() {
+    const text = prompt('Введи любой текст, и я его переверну:');
+    if (text === null) {
+        alert("Игра прервана. Жаль, что вы уходите!");
+        return;
+    }
+    const reversedText = text.split('').reverse().join('');
+    alert(`Ваш перевернутый текст: ${reversedText}`);
+}
+
+
 
