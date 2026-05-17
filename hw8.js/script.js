@@ -104,3 +104,10 @@ const minRange2 = 20;
 const maxRange2 = 25;
 const randomInRange2 = getRandomNumberInRange(minRange2, maxRange2);
 console.log(`Случайное число в диапазоне от ${minRange2} до ${maxRange2}: ${randomInRange2}`);
+//задание 8
+//Выводим текущую дату
+const currentDate = new Date();
+console.log("\nЗадание 8:");
+console.log("Текущая дата и время:", currentDate);
+
+console.log(new Date());
