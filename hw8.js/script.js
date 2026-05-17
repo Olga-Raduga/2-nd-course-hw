@@ -83,3 +83,24 @@ const generatedArray = generateRandomArray(inputNumber);
 console.log("\nЗадание 6:");
 console.log(`Входное число: ${inputNumber}`);
 console.log(`Сгенерированный массив (длина ${generatedArray.length}, числа от 0 до ${inputNumber - 1}):`, generatedArray);
+//задание 7
+//Случайное число в диапазоне
+function getRandomNumberInRange(min, max) {
+    if (min > max) {
+        [min, max] = [max, min];
+    }
+    const randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
+    return randomNumber;
+}
+//Пример использования
+const minRange = 5;
+const maxRange = 10;
+const randomInRange = getRandomNumberInRange(minRange, maxRange);
+
+console.log("\nЗадание 7:");
+console.log(`Случайное число в диапазоне от ${minRange} до ${maxRange}: ${randomInRange}`);
+
+const minRange2 = 20;
+const maxRange2 = 25;
+const randomInRange2 = getRandomNumberInRange(minRange2, maxRange2);
+console.log(`Случайное число в диапазоне от ${minRange2} до ${maxRange2}: ${randomInRange2}`);
