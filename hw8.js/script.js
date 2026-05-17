@@ -44,3 +44,15 @@ console.log(`Округлено до большего целого (Math.ceil): 
 
 const roundValue = Math.round(numberToRound);
 console.log(`Округлено до ближайшего целого (Math.round): ${roundValue}`);
+//задание 4
+//Минимальное и максимальное значения
+const numbersForMinMax = [52, 53, 49, 77, 21, 32];
+
+console.log("\nЗадание 4:");
+console.log("Массив чисел:", numbersForMinMax);
+
+const minValue = Math.min(...numbersForMinMax); // Используем spread-оператор (...)
+console.log(`Минимальное значение: ${minValue}`);
+
+const maxValue = Math.max(...numbersForMinMax); 
+console.log(`Максимальное значение: ${maxValue}`);
