@@ -65,3 +65,21 @@ function logRandomNumber() {
 }
 logRandomNumber();
 logRandomNumber();
+//задание 6
+//Массив случайных чисел с длиной, зависящей от входного числа
+function generateRandomArray(maxNumber) {
+    const arrayLength = Math.floor(maxNumber / 2);
+    const randomArray = [];
+    for (let i = 0; i < arrayLength; i++) {
+        const randomNumber = Math.floor(Math.random() * maxNumber);
+        randomArray.push(randomNumber);
+    }
+    return randomArray;
+}
+//Пример использования
+const inputNumber = 10;
+const generatedArray = generateRandomArray(inputNumber);
+
+console.log("\nЗадание 6:");
+console.log(`Входное число: ${inputNumber}`);
+console.log(`Сгенерированный массив (длина ${generatedArray.length}, числа от 0 до ${inputNumber - 1}):`, generatedArray);
