@@ -31,3 +31,16 @@ const resultWords2 = filterByStartString(moreWords, searchPrefix2);
 console.log("\nИсходный массив строк:", moreWords);
 console.log(`Строка для поиска начала: '${searchPrefix2}'`);
 console.log("Отфильтрованный массив:", resultWords2);
+//задание 3
+//Округление числа
+const numberToRound = 32.58884;
+console.log("\nЗадание 3:");
+console.log(`Исходное число: ${numberToRound}`);
+const floorValue = Math.floor(numberToRound);
+console.log(`Округлено до меньшего целого (Math.floor): ${floorValue}`);
+
+const ceilValue = Math.ceil(numberToRound);
+console.log(`Округлено до большего целого (Math.ceil): ${ceilValue}`);
+
+const roundValue = Math.round(numberToRound);
+console.log(`Округлено до ближайшего целого (Math.round): ${roundValue}`);
