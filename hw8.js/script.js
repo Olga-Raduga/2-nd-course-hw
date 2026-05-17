@@ -111,3 +111,11 @@ console.log("\nЗадание 8:");
 console.log("Текущая дата и время:", currentDate);
 
 console.log(new Date());
+//задание 9
+//Дата через 73 дня
+const currentDate9 = new Date();
+console.log("\nЗадание 9:");
+console.log("Текущая дата:", currentDate9.toLocaleDateString()); 
+const futureDate = new Date(currentDate9);
+futureDate.setDate(currentDate9.getDate() + 73);
+console.log(`Дата через 73 дня: ${futureDate.toLocaleDateString()}`);
