@@ -119,3 +119,37 @@ console.log("Текущая дата:", currentDate9.toLocaleDateString());
 const futureDate = new Date(currentDate9);
 futureDate.setDate(currentDate9.getDate() + 73);
 console.log(`Дата через 73 дня: ${futureDate.toLocaleDateString()}`);
+//задание 10
+//Форматирование даты и времени
+function formatDateTime(date) {
+    const day = date.getDate();
+    const year = date.getFullYear();
+    const monthNames = [
+        "Января", "Февраля", "Марта", "Апреля", "Мая", "Июня",
+        "Июля", "Августа", "Сентября", "Октября", "Ноября", "Декабря"
+    ];
+    const month = monthNames[date.getMonth()];
+
+    const dayOfWeekNames = [
+        "воскресенье", "понедельник", "вторник", "среда", "четверг", "пятница", "суббота"
+    ];
+    const dayOfWeek = dayOfWeekNames[date.getDay()];
+
+    const hours = date.getHours();
+    const minutes = date.getMinutes();
+    const seconds = date.getSeconds();
+
+    const formattedHours = hours < 10 ? '0' + hours : hours;
+    const formattedMinutes = minutes < 10 ? '0' + minutes : minutes;
+    const formattedSeconds = seconds < 10 ? '0' + seconds : seconds;
+
+    const formattedString = `Дата: ${day} ${month} ${year} — это ${dayOfWeek}. Время: ${formattedHours}:${formattedMinutes}:${formattedSeconds}`;
+
+    return formattedString;
+}
+//Пример использования
+const now = new Date(); 
+const formattedResult = formatDateTime(now);
+
+console.log("\nЗадание 10:");
+console.log("Форматированная дата и время:", formattedResult);
