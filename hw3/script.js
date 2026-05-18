@@ -56,4 +56,56 @@ function arithmeticGame() {
         alert(`Ошибка! Ваш ответ: ${userAnswer}. Правильный ответ: ${correctAnswer}`);
     }
 }
-
+//Игра 3
+function reverseTextGame() {
+    const text = prompt('Введи любой текст, и я его переверну:');
+    if (text === null) {
+        alert("Игра прервана. Жаль, что вы уходите!");
+        return;
+    }
+    const reversedText = text.split('').reverse().join('');
+    alert(`Ваш перевернутый текст: ${reversedText}`);
+}
+//Игра 5
+const quiz = [
+    {
+        question: "Какой цвет небо?",
+        options: ["1. Красный", "2. Синий", "3. Зеленый"], correctAnswer: 2
+    },
+    {
+        question: "Сколько дней в неделе?",
+        options: ["1. Шесть", "2. Семь", "3. Восемь"],
+        correctAnswer: 2
+    },
+    {
+        question: "Сколько у человека пальцев на одной руке?",
+        options: ["1. Четыре", "2. Пять", "3. Шесть"],
+        correctAnswer: 2
+    }
+];
+function startQuiz() {
+    let correctAnswersCount = 0;
+    for (let i = 0; i < quiz.length; i++) {
+        const currentQuestion = quiz[i];
+        const promptMessage = `${currentQuestion.question}\n${currentQuestion.options.join('\n')}\n\nВведите номер вашего ответа (1, 2 или 3):`;
+        const userAnswerString = prompt(promptMessage);
+        if (userAnswerString === null) {
+            alert("Викторина прервана. Спасибо за участие!");
+            return;
+        }
+        const userAnswer = parseInt(userAnswerString);
+        if (isNaN(userAnswer)) {
+            alert(`Некорректный ввод для вопроса "${currentQuestion.question}". Ответ не засчитан.`);
+        }
+        else {
+            if (userAnswer === currentQuestion.correctAnswer) {
+                correctAnswersCount++;
+                alert("Правильно!");
+            }
+            else {
+                alert(`Неверно. Правильный ответ был: ${currentQuestion.correctAnswer}.`);
+            }
+        }
+    }
+    alert(`Викторина окончена! Вы ответили правильно на ${correctAnswersCount} из ${quiz.length} вопросов.`);
+}
