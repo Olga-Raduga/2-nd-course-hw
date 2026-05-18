@@ -59,3 +59,14 @@ const intervalId = setInterval(() => {
         }, 0); 
     }
 }, 3000); 
+//задание 4
+//Задержка выполнения функции с setTimeout
+function delayForSecond(callback) {
+    setTimeout(callback, 1000);
+}
+console.log("\nЗадание 4:");
+console.log("Вызов delayForSecond...");
+
+delayForSecond(function () {
+    console.log('Привет, Глеб!');
+});
