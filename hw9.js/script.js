@@ -43,3 +43,19 @@ const peopleForFilter = [
 ];
 console.log("\nИсходный массив людей:", peopleForFilter);
 console.log("Фильтрация по мужскому полу:", customFilter(peopleForFilter, isMale));
+//задание 3
+//Интервал и отложенное выполнение
+console.log("\nЗадание 3:");
+let counter = 0; 
+const totalIntervals = 10;
+const intervalId = setInterval(() => {
+    const now = new Date();
+    console.log(`[${now.toLocaleTimeString()}] Текущая дата и время.`);
+    counter++;
+    if (counter === totalIntervals) {
+        clearInterval(intervalId);
+        setTimeout(() => {
+            console.log("30 секунд прошло.");
+        }, 0); 
+    }
+}, 3000); 
