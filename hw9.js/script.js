@@ -70,3 +70,20 @@ console.log("Вызов delayForSecond...");
 delayForSecond(function () {
     console.log('Привет, Глеб!');
 });
+//задание 5
+//Исправление порядка выполнения с setTimeout
+function delayForSecond(cb) {
+    setTimeout(() => {
+        console.log('Прошла одна секунда');
+        if (cb) { cb(); } 
+    }, 1000)   
+}
+function sayHi(name) {
+    console.log(`Привет, ${name}!`);
+}
+
+console.log("\nЗадание 5:");
+console.log("Ожидаем вывода приветствия через 1 секунду...");
+delayForSecond(function () {
+    sayHi('Глеб');
+});
