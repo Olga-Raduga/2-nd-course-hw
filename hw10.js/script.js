@@ -51,3 +51,16 @@ addElementButton6.addEventListener('click', function () {
     newParagraph.textContent = 'Новый абзац';
     container6.appendChild(newParagraph);
 });
+
+//задание 7
+//Удаление элемента
+const removeElementButton7 = document.querySelector('#removeElementButton7');
+const firstDescription = document.querySelector('#task7-container .description');
+removeElementButton7.addEventListener('click', function () {
+    if (firstDescription) {
+        firstDescription.remove(); 
+        console.log("Первый элемент с классом 'description' удален.");
+    } else {
+        alert("Элемент для удаления не найден.");
+    }
+});
