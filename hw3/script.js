@@ -66,6 +66,32 @@ function reverseTextGame() {
     const reversedText = text.split('').reverse().join('');
     alert(`Ваш перевернутый текст: ${reversedText}`);
 }
+//Игра 4
+function rockPaperScissorsGame() {
+    const choices = ['камень', 'ножницы', 'бумага'];
+    const userInput = prompt('Выбери: камень, ножницы или бумага').toLowerCase(); 
+    if (userInput === null) return;
+    const userChoice = userInput.toLowerCase().trim();
+    if (!choices.includes(userChoice)) {
+        alert('Некорректный ввод! Введи: камень, ножницы или бумага');
+        return;
+    }
+    const computerChoice = choices[Math.floor(Math.random() * choices.length)];
+    let result;
+    if (userChoice === computerChoice) {
+        result = 'Ничья!';
+    } else if (
+        (userChoice === 'камень' && computerChoice === 'ножницы') ||
+        (userChoice === 'ножницы' && computerChoice === 'бумага') ||
+        (userChoice === 'бумага' && computerChoice === 'камень')
+    ) {
+        result = 'Ты победил!';
+    } else {
+        result = 'Компьютер победил!';
+    }
+    alert(`Ты выбрал: ${userChoice}\nКомпьютер выбрал: ${computerChoice}\n\n${result}`);
+}
+
 //Игра 5
 const quiz = [
     {
