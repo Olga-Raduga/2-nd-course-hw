@@ -41,3 +41,13 @@ const descriptionParagraphs = document.querySelectorAll('#task5-container .descr
 descriptionParagraphs.forEach(paragraph => {
     paragraph.textContent = 'Новый текст';
 });
+
+//задание 6
+//Добавление нового элемента в DOM
+const addElementButton6 = document.querySelector('#addElementButton6');
+const container6 = document.querySelector('#container6'); 
+addElementButton6.addEventListener('click', function () {
+    const newParagraph = document.createElement('p');
+    newParagraph.textContent = 'Новый абзац';
+    container6.appendChild(newParagraph);
+});
