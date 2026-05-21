@@ -34,3 +34,10 @@ const descriptionElements = document.querySelectorAll('.description');
 descriptionElements.forEach(element => {
     element.textContent = 'Измененный текст';
 });
+
+//задание 5
+//Работа с querySelectorAll
+const descriptionParagraphs = document.querySelectorAll('#task5-container .description');
+descriptionParagraphs.forEach(paragraph => {
+    paragraph.textContent = 'Новый текст';
+});
