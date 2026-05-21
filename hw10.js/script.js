@@ -11,3 +11,11 @@ btn.addEventListener('click', function () {
         btn.textContent = 'Показать';
     }
 });
+
+//задание 2
+//изменить цвет текста
+const paragraph2 = document.querySelector('#myParagraph2');
+const changeColorButton2 = document.querySelector('#changeColorButton2');
+changeColorButton2.addEventListener('click', function () {
+    paragraph2.style.color = 'blue';
+});
