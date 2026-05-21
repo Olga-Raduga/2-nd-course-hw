@@ -27,3 +27,10 @@ const changeTextButton3 = document.querySelector('#changeTextButton3');
 changeTextButton3.addEventListener('click', function () {
     heading3.textContent = 'Привет, мир!';
 });
+
+//задание 4
+//Поиск и изменение элементов по классу
+const descriptionElements = document.querySelectorAll('.description');
+descriptionElements.forEach(element => {
+    element.textContent = 'Измененный текст';
+});
