@@ -36,7 +36,7 @@ html, body {
   padding: 106px 0;
   text-align: left;
   margin: 0;
-  height: 800px;
+  min-height: 800px;
   position: relative;
   overflow: hidden;
 }
@@ -123,7 +123,6 @@ html, body {
 }
 
 .welcome-section__container {
-  max-width: 1200px;
   position: relative;
   z-index: 1;
 }
@@ -238,6 +237,9 @@ html, body {
 .about-games-section {
   background-color: #202027;
   padding-top: 94px;
+  background-image: url(img/Star2_4.svg), url(img/Star2_1.svg);
+  background-position: 25px 770px, 111% 85px;
+  background-repeat: no-repeat;
 }
 
 .about-games-section__container {
@@ -370,6 +372,10 @@ html, body {
   background-color: #202027;
   padding-top: 30px;
   padding-bottom: 80px;
+  transition: background-color 0.5s ease;
+  background-image: url(img/Star-mini2_1.svg), url(img/Star-mini2_2.svg);
+  background-position: calc(100% - 80px) calc(100% - 3299px), calc(100% - 80px) calc(100% - 45px);
+  background-repeat: no-repeat;
 }
 
 .container {
@@ -466,6 +472,7 @@ html, body {
   width: -moz-fit-content;
   width: fit-content;
   transition: background-color 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
 }
 
 .mini-card__button:hover {
