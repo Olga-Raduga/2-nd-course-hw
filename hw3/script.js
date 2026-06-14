@@ -135,3 +135,22 @@ function startQuiz() {
     }
     alert(`Викторина окончена! Вы ответили правильно на ${correctAnswersCount} из ${quiz.length} вопросов.`);
 }
+//Игра 6
+const changeBackgroundColorBtn = document.getElementById('changeBackgroundColorBtn');
+const miniSection = document.getElementById('mini-games');
+function getRandomColor() {
+    const letters = '0123456789ABCDEF';
+    let color = '#';
+    for (let i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+}
+if (changeBackgroundColorBtn && miniSection) {
+    changeBackgroundColorBtn.addEventListener('click', () => {
+        const randomColor = getRandomColor();
+        miniSection.style.backgroundColor = randomColor;
+    });
+} else {
+    console.error("Не удалось найти кнопку 'changeBackgroundColorBtn' или секцию 'mini-games'. Проверьте HTML.");
+}
